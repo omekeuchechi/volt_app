@@ -1,0 +1,18 @@
+body{
+    background: linear-gradient(20deg, rgba(252, 23, 202, 0.719), #fff);
+}
+
+.page-arrow a > .fa-circle-left{
+    font-size: 60px;
+    color: rgb(247, 31, 193);
+    transition: all 0.6s ease-in-out;
+}
+.page-arrow{
+    padding: 30px;
+}
+.page-arrow > a{
+    text-decoration: none;
+}
+.page-arrow a > .fa-circle-left:hover{
+    color: rgba(31, 100, 247, 0.63);
+}

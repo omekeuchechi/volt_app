@@ -1,0 +1,43 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#p-header{
+    clip-path: polygon(0 0, 100% 0, 100% 51%, 0% 100%);
+    /* border: 1px solid #000; */
+    background: url('../img/programmer-working-desk_52683-24830.avif');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 90%;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.welcome{
+    text-align: center;
+    padding: 20px;
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgb(234, 28, 241);
+}
+#get-started{
+    border: 1px solid rgb(234, 28, 241);
+    border-radius: 10px;
+    text-align: center;
+    padding: 90px;
+}
+.des{
+    font-size: 2.6rem;
+    color: rgb(234, 28, 241);
+}
+.get-btn{
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-weight: 900;
+    text-decoration: none;
+    background-color: rgb(234, 28, 241);
+}

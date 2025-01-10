@@ -1,0 +1,45 @@
+:root{
+    --bg-color-1: rgba(209, 11, 209, 0.664);
+    --color-1: #fff;
+}
+.about-content{
+    padding: 40px;
+    background: var(--bg-color-1);
+    display: block;
+    clip-path: polygon(0 0, 100% 4%, 100% 100%, 0 93%);
+}
+.about-content > h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 48px;
+    color: var(--color-1);
+    font-weight: 900;
+}
+.about-content > .ab-container .ab-describtion{
+    padding: 20px;
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--color-1);
+}
+.ab-box .ab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+
+
+.ab-box #ab-slide .ab .ab-list > .ab-link{
+    color: var(--color-1);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ab-box marquee .ab .ab-list .ab-link > img{
+    border-radius: 50px;
+    width: 300px;
+}
