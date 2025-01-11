@@ -17,10 +17,12 @@ class PostShow extends Component
 
     public function render()
     {
+        // $post = Post::orderBy('created_at', 'desc')->get();
         return view('livewire.post-show', [
-            'post' => $this->post,
-            'posts' => Post::all(),
-            'comments' => $this->post->comments()->latest()->get(),
+            // 'posts' => Post::latest()->get(),
+            'posts' => Post::orderBy('created_at', 'desc')->get(),
+            // 'posts' => Post::find(Post::latest()->first()),
+            // 'comments' => $this->post->comments()->latest()->get(),
             'likes' => $this->post->likes()->where('liked', true)->count(),
             'dislikes' => $this->post->likes()->where('liked', false)->count(),
         ]);

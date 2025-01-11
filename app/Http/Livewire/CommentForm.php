@@ -12,6 +12,8 @@ class CommentForm extends Component
     public $post;
     public $content;
 
+    public $comment;
+
     protected $rules = [
         'content' => 'required|max:500',
     ];
@@ -19,6 +21,7 @@ class CommentForm extends Component
     public function mount(Post $post)
     {
         $this->post = $post;
+        // $this->comment = $comment;
     }
 
     public function submit()
@@ -32,10 +35,15 @@ class CommentForm extends Component
 
         $this->reset('content');
         $this->emit('commentAdded');
+        return back()->with('msg', 'add a comment');
     }
 
     public function render()
     {
-        return view('livewire.comment-form');
+        return view('livewire.comment-form', [
+            // 'contents' => $this->content,
+            'comments' => Comment::all(),
+            'post_id' => $this->post->id
+        ]);
     }
 }

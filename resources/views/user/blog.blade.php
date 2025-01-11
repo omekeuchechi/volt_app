@@ -1,5 +1,5 @@
 @extends('layouts.blog')
 
 @section('content')
-<livewire:post-show :post="$post" />
+<livewire:post-show />
 @endsection
